@@ -10,13 +10,10 @@ public class Lesson2 {
         int b = sc.nextInt();
         if (b <= a) {
             System.err.println("Ошибка ввода");
-        } else {
-            for (int i = a; a <= b; a++) {
-                int x = a %5;
-                int y = a%10;
-                if ((x == 0)&&!(y==0)) {
-                    System.out.println(a);
-                }
+        }
+        for (int i = a +1;i<b;i++){
+            if (i%5==0&&i%10!=0){
+                System.out.print(i+" ");
             }
         }
     }
